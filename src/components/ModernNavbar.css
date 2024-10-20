@@ -1,84 +1,98 @@
 /* ModernNavbar.css */
+
 .navbar {
     position: fixed;
-    top: 20px; /* Space from the top */
-    left: 50%;
-    transform: translate(-50%, 0); /* Center the navbar horizontally */
-    background-color: #ffffff; /* Clean white background */
-    padding: 15px 40px; /* Padding for a spacious look */
-    border-radius: 25px; /* More subtle rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    top: 20px; /* Distance from the top */
+    left: 8%; /* Center horizontally */
+    transform: translateX(-50%); /* Horizontal centering fix */
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%; /* Responsive width */
-    max-width: 1200px; /* Limit max width */
+    max-width: 1200px;
     z-index: 1000;
-    margin-left: -45%; /* Adjust margin to keep navbar centered */
 }
 
 .logo {
-    font-size: 1.8rem; /* Slightly larger logo */
-    font-weight: 700; /* Bold font for better visibility */
-    color: #333; /* Dark color for contrast */
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
 }
 
+/* Navbar Links */
 .nav-links {
     list-style: none;
-    font-family: 'Martian mono';
     display: flex;
-    gap: 30px; /* Increased gap for better spacing */
+    gap: 30px;
+    font-family: 'Martian Mono';
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: #555; /* Softer dark color for links */
-    font-size: 1rem; /* Consistent font size */
-    transition: color 0.3s ease, transform 0.2s; /* Smooth color and scale transition */
+    color: #555;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.2s;
 }
 
 .nav-links li a:hover {
-    color: #009fd4; /* Bright blue on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
+    color: #009fd4;
+    transform: translateY(-2px);
 }
 
 /* Hamburger Menu Icon */
 .menu-icon {
-    display: none; /* Hide on larger screens */
+    display: none;
     cursor: pointer;
     flex-direction: column;
-    gap: 5px; /* Space between bars */
+    gap: 5px;
 }
 
 .bar {
-    width: 30px; /* Wider bars */
-    height: 4px; /* Thicker bars */
-    background-color: #333; /* Dark color for visibility */
-    transition: 0.3s; /* Smooth transition */
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    transition: 0.3s;
 }
 
 .open {
-    transform: rotate(45deg); /* Rotate effect for the first bar */
+    transform: rotate(45deg); /* Rotate on open */
 }
 
-/* Mobile Responsive Styles */
+/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
+    .navbar {
+        top: 10px;
+        left: 8%; /* Ensure it stays centered */
+        transform: translateX(-50%); /* Correct centering */
+        width: 95%; /* Reduce width slightly */
+        max-width: 450px; /* Limit size for mobile */
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 1.4rem; /* Adjust logo size for mobile */
+    }
+
     .menu-icon {
-        display: flex; /* Show hamburger menu */
+        display: flex; /* Show menu icon on mobile */
     }
 
     .nav-links {
-        display: none; /* Hide links by default */
+        display: none; /* Hide by default */
         flex-direction: column;
-        gap: 10px; /* Reduce space for dropdown */
+        gap: 10px;
         position: absolute;
-        top: 60px; /* Space below navbar */
-        right: 10px; /* Align to the right */
-        background-color: #ffffff; /* Consistent background */
-        padding: 10px; /* Reduced padding for dropdown */
-        border-radius: 10px; /* Rounded dropdown */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for dropdown */
-        z-index: 999; /* Above other content */
+        top: 60px;
+        right: 10px;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -86,18 +100,7 @@
     }
 
     .nav-links li a {
-        font-size: 0.9rem; /* Smaller font size for mobile */
-        padding: 8px; /* Reduced padding for touch targets */
-    }
-
-    .navbar {
-        padding: 20px; /* Smaller padding for the navbar */
-        width: 100%; /* Maintain width */
-        max-width: 445px; /* Adjust max-width for mobile */
-    }
-
-    .logo {
-        font-size: 1.5rem; /* Smaller logo size on mobile */
+        font-size: 0.9rem;
+        padding: 8px;
     }
 }
-
