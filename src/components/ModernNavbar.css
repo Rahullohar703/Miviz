@@ -93,7 +93,7 @@
     .navbar {
         padding: 20px; /* Smaller padding for the navbar */
         width: 100%; /* Maintain width */
-        max-width: 460px; /* Adjust max-width for mobile */
+        max-width: 445px; /* Adjust max-width for mobile */
     }
 
     .logo {
