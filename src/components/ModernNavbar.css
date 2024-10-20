@@ -3,7 +3,7 @@
 .navbar {
     position: fixed;
     top: 20px; /* Distance from the top */
-    left: 8%; /* Center horizontally */
+    left: 5%; /* Center horizontally */
     transform: translateX(-50%); /* Horizontal centering fix */
     background-color: #ffffff;
     padding: 15px 30px;
@@ -66,7 +66,7 @@
 @media (max-width: 768px) {
     .navbar {
         top: 10px;
-        left: 8%; /* Ensure it stays centered */
+        left: 5%; /* Ensure it stays centered */
         transform: translateX(-50%); /* Correct centering */
         width: 95%; /* Reduce width slightly */
         max-width: 450px; /* Limit size for mobile */
