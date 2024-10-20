@@ -14,7 +14,7 @@
     width: 90%; /* Responsive width */
     max-width: 1200px; /* Limit max width */
     z-index: 1000;
-    margin-left: -42%; /* Adjust margin to keep navbar centered */
+    margin-left: -45%; /* Adjust margin to keep navbar centered */
 }
 
 .logo {
