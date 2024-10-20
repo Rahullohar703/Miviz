@@ -1,0 +1,84 @@
+/* ResponsiveTable.css */
+* {
+    box-sizing: border-box;
+}
+
+.table-container {
+    margin: 40px auto;
+    width: 90%; /* Make it responsive */
+    max-width: 1200px;
+    overflow-x: auto; /* Handle overflow on small screens */
+    font-family: 'Martian Mono', monospace;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Keep the border-radius intact */
+}
+
+.responsive-table thead th {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.responsive-table tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.responsive-table tbody tr:last-child td {
+    border-bottom: none; /* Remove border from the last row */
+}
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+    .responsive-table thead th,
+    .responsive-table tbody td {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .table-container {
+        width: 95%; /* Slightly increase width on tablets */
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+    .responsive-table thead {
+        display: none; /* Hide the header on small screens */
+    }
+
+    .responsive-table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .responsive-table tbody td {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85rem;
+        padding: 8px 0;
+    }
+
+    .responsive-table tbody td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        margin-right: 10px;
+        color: #555;
+    }
+}

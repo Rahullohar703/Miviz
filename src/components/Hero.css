@@ -1,0 +1,27 @@
+/* Hero.css */
+
+.hero-text {
+    position: absolute; /* Ensure it's positioned correctly */
+    top: 2%; /* Vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to exact center */
+    font-size: 250px; /* Default font size */
+    color: white; /* Text color */
+    z-index: 2; /* Ensure it's on top of the image */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { /* Tablet */
+    .hero-text {
+        font-size: 150px; /* Adjusted font size for tablet */
+        top: 10%; /* Adjust vertical positioning */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .hero-text {
+        font-size: 100px; /* Adjusted font size for mobile */
+        top: 25%; /* Adjust further vertical positioning */
+        left: 1%;
+    }
+}
