@@ -24,8 +24,6 @@ const Collab = () => {
 
       {/* Collaboration Cards Section */}
       <div className="collab-cards">
-        
-
         <motion.div
           className="collab-card"
           whileHover={{ scale: 1.05 }}

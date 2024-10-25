@@ -77,11 +77,14 @@
         transform: translateX(-50%); /* Correct centering */
         width: 95%; /* Reduce width slightly */
         max-width: 450px; /* Limit size for mobile */
-        padding: 20px;
+        padding-bottom: 15px;
+        border-radius: 25px;
     }
 
     .logo {
-        font-size: 1.1rem; /* Adjust logo size for mobile */
+        font-size: 1.0rem; /* Adjust logo size for mobile */
+        margin: -16px;
+        padding-left: 8px;
     }
 
     .menu-icon {
