@@ -2,25 +2,43 @@
 
 /* Hero Text Styling */
 
-  
-  /* Responsive Media Queries */
-  /* This could be in your global CSS file */
+/* Responsive Media Queries */
+
+/* This could be in your global CSS file */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-  @media (max-width: 768px) { /* Tablet */
-    .hero-text {
+.hero-text {
+  position: absolute; /* Assuming you have text elements to position based on your requirements */
+}
+
+/* Media Query for Tablet */
+@media (max-width: 768px) { 
+  .hero-text {
       font-size: 150px; /* Smaller font size for tablets */
       top: 40%; /* Adjust vertical position */
-    }
   }
-  
-  @media (max-width: 480px) { /* Mobile */
-    .hero-text {
+}
+
+/* Media Query for Mobile */
+@media (max-width: 480px) { 
+  .hero-text {
       font-size: 100px; /* Even smaller font size for mobile */
       top: 50%; /* Further adjust vertical position */
-      left: 50%; /* Keep text horizontally centered */
-    }
+      left: 50%; /* Center text horizontally */
+      transform: translate(-50%, -50%); /* Center with transform */
   }
-  
+}
+
+/* Additional styles to ensure proper behavior on mobile */
+h3 {
+  text-align: center; /* Center heading on mobile */
+  margin: 20px 0; /* Margin for breathing room */
+}
+
+p {
+  text-align: justify; /* Justify paragraph text */
+  padding: 20px; /* Padding for paragraph */
+  font-size: 1rem; /* Adjust font size on mobile if necessary */
+}
