@@ -3,12 +3,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ModernNavbar from './components/ModernNavbar';
 import Hero from './components/Hero';
-import Colab from './menu links/Colab';
+import Collab from './menu links/Collab';
 import Interior from './menu links/Interior';
 import Contact from './menu links/Contact';
 import Projects from './components/Projects';
 import Ticker from './components/Ticker';
-import ScrollingImage from './components/ScrollingImage';
 import ResponsiveTable from './components/ResponsiveTable';
 import Footer from './components/Footer';
 
@@ -26,14 +25,14 @@ function App() {
                             <Hero />
                             <Projects />
                             <Ticker />
-                            <ScrollingImage />
+                            
                             <ResponsiveTable />
                         </>
                     } 
                 />
 
                 {/* Other Routes */}
-                <Route path="/colab" element={<Colab />} />
+                <Route path="/collab" element={<Collab />} />
                 <Route path="/interior" element={<Interior />} />
                 <Route path="/contact" element={<Contact />} />
                 

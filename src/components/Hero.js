@@ -21,7 +21,7 @@ const Hero = () => {
       >
         {/* Hero Image */}
         <motion.img
-          src="https://www.dropbox.com/scl/fi/wa8p10uoyswwc4m5ilcr6/MIVIZ.svg?rlkey=y0a274rxzhz3hpop8zoht3m6x&st=k82ugibu&raw=1" // Replace with your image URL
+          src="\heroimg.png" // Replace with your image URL
           alt="Hero"
           style={{
             position: 'fixed',
@@ -65,7 +65,7 @@ const Hero = () => {
             fontFamily: 'Martian mono'
           }}
         >
-          Welcome to MIVIZ Architects, a prestigious architectural firm based in Auckland. We
+          Welcome to MIVIZ Architects, a prestigious architectural firm based in Pune,India. We
           specialize in crafting highly personalized homes where minimalism meets functionality.
           With a keen eye for detail and a commitment to innovative design, we create residences
           that reflect the unique visions and lifestyles of our clients. At MIVIZ, we believe that

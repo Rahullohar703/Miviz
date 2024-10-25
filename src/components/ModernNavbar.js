@@ -1,44 +1,57 @@
-// ModernNavbar.js
+// src/components/ModernNavbar.js
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './ModernNavbar.css';
 import { Link } from 'react-router-dom'; // Import Link
 
-
 const ModernNavbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <motion.nav
-            className="navbar"
-            initial={{ y: -100 }}
-            animate={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 80, damping: 10 }}
+  return (
+    <motion.nav
+      className="navbar"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ type: 'spring', stiffness: 80, damping: 10 }}
+    >
+      {/* Logo Section */}
+      <div className="logo">
+        <Link to="/">
+          <img src="/logo.png" alt="Logo" className="logo-img" />
+        </Link>
+      </div>
+
+      {/* Hamburger Menu Icon */}
+      <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
+        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+      </div>
+
+      {/* Navigation Links */}
+      <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <motion.li whileHover={{ scale: 1.1 }}>
+          <Link to="/">Home</Link>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
+          <Link to="/collab">Collab</Link>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
+        <a 
+        href="https://miviz.vercel.app" 
+        target="_blank" 
+        rel="noopener noreferrer"
         >
-            <div className="logo">MyLogo</div>
+        Interior
+        </a>
 
-            <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
-                <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-                <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-                <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-            </div>
-
-            <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-            <motion.li whileHover={{ scale: 1.1 }}>
-                <Link to="/">Home</Link>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.1 }}>
-                <Link to="/colab">Colab</Link>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.1 }}>
-                <Link to="/interior">Interior</Link>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.1 }}>
-                <Link to="/contact">Contact</Link>
-            </motion.li>
-        </ul>
-        </motion.nav>
-    );
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
+          <Link to="/contact">Contact</Link>
+        </motion.li>
+      </ul>
+    </motion.nav>
+  );
 };
 
 export default ModernNavbar;

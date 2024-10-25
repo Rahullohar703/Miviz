@@ -11,9 +11,10 @@
 .ticker {
     display: inline-block;
     font-family: 'Martian Mono', monospace;
-    font-size: 250px; /* Default font size */
+    font-size: 150px; /* Default font size */
     line-height: 1;
     padding: 30px 0;
+    color: rgb(121, 120, 120);
 }
 
 /* Responsive Styles */

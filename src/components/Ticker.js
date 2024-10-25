@@ -19,7 +19,7 @@ const Ticker = () => {
                     repeat: Infinity, // Keep repeating smoothly
                 }}
             >
-                <span>ARCHITECT DESIGN ARCHITECT</span>
+                <span>ARCHITECTURE URBAN LANDSCAPING INTERIOR</span>
             </motion.div>
         </div>
     );

@@ -1,6 +1,6 @@
-/* Colab.css */
+/* CoLlab.css */
 
-.colab-container {
+.collab-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
@@ -8,7 +8,7 @@
   margin-top: 40px;
 }
 
-.colab-header h1 {
+.collab-header h1 {
   font-size: 3.0rem;
   margin-bottom: 10px;
   color: #333;
@@ -16,7 +16,7 @@
 
 }
 
-.colab-header p {
+.collab-header p {
   font-size: 1.2rem;
   margin-bottom: 40px;
   color: #555;
@@ -24,47 +24,47 @@
 
 }
 
-.colab-cards {
+.collab-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-bottom: 50px;
 }
 
-.colab-card {
+.collab-card {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgb(71, 99, 103);
   transition: transform 0.2s;
+  height: 250px;
 }
 
-.colab-card h3 {
+.collab-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-family: 'Martian mono';
 
 }
 
-.colab-card p {
+.collab-card p {
   font-size: 0.8rem;
   color: #555;
   font-family: 'Martian mono';
-
 }
 
-.colab-cta {
+.collab-cta {
   margin-top: 50px;
 }
 
-.colab-cta h2 {
+.collab-cta h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   font-family: 'Martian mono';
 
 }
 
-.colab-cta p {
+.collab-cta p {
   font-size: 1.0rem;
   margin-bottom: 30px;
   color: #666;
@@ -72,7 +72,7 @@
 
 }
 
-.colab-cta button {
+.collab-cta button {
   padding: 20px 30px;
   background-color: #333;
   color: white;
@@ -83,6 +83,6 @@
   font-family: 'Martian mono';
 }
 
-.colab-cta button:hover {
+.collab-cta button:hover {
   background-color: #444;
 }

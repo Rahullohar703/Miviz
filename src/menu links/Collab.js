@@ -1,19 +1,19 @@
 // src/menu links/Colab.js
 import React from 'react';
 import { motion } from 'framer-motion';
-import './Colab.css'; // Import CSS for styling
+import './Collab.css'; // Import CSS for styling
 
-const Colab = () => {
+const Collab = () => {
   return (
     <motion.div
-      className="colab-container"
+      className="collab-container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       {/* Header Section */}
       <motion.div
-        className="colab-header"
+        className="collab-header"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 1 }}
@@ -23,18 +23,11 @@ const Colab = () => {
       </motion.div>
 
       {/* Collaboration Cards Section */}
-      <div className="colab-cards">
-        <motion.div
-          className="colab-card"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: 'spring', stiffness: 200 }}
-        >
-          <h3>Partner with Us</h3>
-          <p>Explore partnership opportunities and bring impactful architectural projects to life.</p>
-        </motion.div>
+      <div className="collab-cards">
+        
 
         <motion.div
-          className="colab-card"
+          className="collab-card"
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 200 }}
         >
@@ -43,7 +36,7 @@ const Colab = () => {
         </motion.div>
 
         <motion.div
-          className="colab-card"
+          className="collab-card"
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 200 }}
         >
@@ -54,7 +47,7 @@ const Colab = () => {
 
       {/* Call to Action Section */}
       <motion.div
-        className="colab-cta"
+        className="collab-cta"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
@@ -74,4 +67,4 @@ const Colab = () => {
   );
 };
 
-export default Colab;
+export default Collab;

@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 import './ResponsiveTable.css';
 
 const data = [
-    { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', publisher: 'Scribner', year: 1925 },
-    { title: 'To Kill a Mockingbird', author: 'Harper Lee', publisher: 'J.B. Lippincott & Co.', year: 1960 },
-    { title: '1984', author: 'George Orwell', publisher: 'Secker & Warburg', year: 1949 },
-    { title: 'To Kill a Mockingbird', author: 'Harper Lee', publisher: 'J.B. Lippincott & Co.', year: 1960 },
-    { title: 'To Kill a Mockingbird', author: 'Harper Lee', publisher: 'J.B. Lippincott & Co.', year: 1960 },
-    { title: 'To Kill a Mockingbird To Kill a Mockingbird To Kill a Mockingbird', author: 'Harper Lee', publisher: 'J.B. Lippincott & Co.', year: 1960 },
+    { title: 'Residential Design' },
+    { title: 'Commercial Architecture' },
+    { title: 'Interior Design' },
+    { title: 'Landscape Architecture' },
+    { title: 'Renovation and Restoration' },
+    { title: '3D Visuals' },
+    { title: 'Urban Planning and Design' },
 ];
 
 const ResponsiveTable = () => (
@@ -22,19 +23,14 @@ const ResponsiveTable = () => (
         <table className="responsive-table">
             <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Publisher</th>
-                    <th>Year</th>
+                    <th>Our Services</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 {data.map((book, index) => (
                     <tr key={index}>
                         <td>{book.title}</td>
-                        <td>{book.author}</td>
-                        <td>{book.publisher}</td>
-                        <td>{book.year}</td>
                     </tr>
                 ))}
             </tbody>
