@@ -1,6 +1,6 @@
-/* CoLlab.css */
+/* Careers.css */
 
-.collab-container {
+.careers-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
@@ -8,15 +8,16 @@
   margin-top: 40px;
 }
 
-.collab-header h1 {
+.careers-header h1 {
   font-size: 3.0rem;
   margin-bottom: 10px;
   color: #333;
   font-family: 'Martian mono';
+  
 
 }
 
-.collab-header p {
+.careers-header p {
   font-size: 1.2rem;
   margin-bottom: 40px;
   color: #555;
@@ -24,14 +25,14 @@
 
 }
 
-.collab-cards {
+.careers-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-bottom: 50px;
 }
 
-.collab-card {
+.careers-card {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
@@ -40,31 +41,31 @@
   height: 250px;
 }
 
-.collab-card h3 {
+.careers-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-family: 'Martian mono';
 
 }
 
-.collab-card p {
+.careers-card p {
   font-size: 0.8rem;
   color: #555;
   font-family: 'Martian mono';
 }
 
-.collab-cta {
+.careers-cta {
   margin-top: 50px;
 }
 
-.collab-cta h2 {
+.careers-cta h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   font-family: 'Martian mono';
 
 }
 
-.collab-cta p {
+.careers-cta p {
   font-size: 1.0rem;
   margin-bottom: 30px;
   color: #666;
@@ -72,7 +73,7 @@
 
 }
 
-.collab-cta button {
+.careers-cta button {
   padding: 20px 30px;
   background-color: #333;
   color: white;
@@ -83,6 +84,18 @@
   font-family: 'Martian mono';
 }
 
-.collab-cta button:hover {
+.careers-cta button:hover {
   background-color: #444;
+}
+
+.card-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent elements */
+  display: block; /* Make the entire card clickable */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Apply hover effect on the link */
+.card-link:hover {
+  color: #444; /* Slight color change on hover */
 }

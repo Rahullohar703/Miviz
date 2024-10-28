@@ -3,13 +3,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ModernNavbar from './components/ModernNavbar';
 import Hero from './components/Hero';
-import Collab from './menu links/Collab';
 import Interior from './menu links/Interior';
 import Contact from './menu links/Contact';
 import Projects from './components/Projects';
 import Ticker from './components/Ticker';
 import ResponsiveTable from './components/ResponsiveTable';
 import Footer from './components/Footer';
+import Careers from './menu links/Careers';
 
 function App() {
     return (
@@ -32,7 +32,7 @@ function App() {
                 />
 
                 {/* Other Routes */}
-                <Route path="/collab" element={<Collab />} />
+                <Route path="/careers" element={<Careers />} />
                 <Route path="/interior" element={<Interior />} />
                 <Route path="/contact" element={<Contact />} />
                 

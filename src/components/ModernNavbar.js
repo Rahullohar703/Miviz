@@ -41,11 +41,11 @@ const ModernNavbar = () => {
                     <Link to="/">Home</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }}>
-                    <Link to="/collab">Collab</Link>
+                    <Link to="/careers">Careers</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }}>
                     <a
-                        href="https://miviz.vercel.app"
+                        href="https://mivizarchitects.in"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
