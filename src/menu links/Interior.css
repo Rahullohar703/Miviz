@@ -12,7 +12,7 @@
   font-size: 3.0rem;
   margin-bottom: 10px;
   color: #333;
-  font-family: 'Martian mono';
+  font-family: 'poppins';
 
 }
 
@@ -20,7 +20,7 @@
   font-size: 1.2rem;
   margin-bottom: 40px;
   color: #555;
-  font-family: 'Martian mono';
+  font-family: 'poppins';
 
 }
 
@@ -42,14 +42,14 @@
 .interior-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  font-family: 'Martian mono';
+  font-family: 'poppins';
 
 }
 
 .interior-card p {
   font-size: 0.8rem;
   color: #555;
-  font-family: 'Martian mono';
+  font-family: 'poppins';
 
 }
 
@@ -61,7 +61,7 @@
 .interior-cta h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  font-family: 'Martian mono';
+  font-family: 'poppins';
 
 }
 
@@ -69,7 +69,7 @@
   font-size: 1.0rem;
   margin-bottom: 30px;
   color: #666;
-  font-family: 'Martian mono';
+  font-family: 'poppins';
 
 }
 
@@ -81,7 +81,7 @@
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.0rem;
-  font-family: 'Martian mono';
+  font-family: 'poppins';
 }
 
 .interior-cta button:hover {

@@ -1,7 +1,8 @@
 // src/menu links/Contact.js
 import React from 'react';
 import { motion } from 'framer-motion';
-import FormfacadeEmbed from "@formfacade/embed-react"; // Import the Formfacade component
+// @ts-ignore
+import FormfacadeEmbed from '@formfacade/embed-react';
 import './Contact.css'; // Import optional CSS for styling
 
 const Contact = () => {

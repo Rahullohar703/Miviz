@@ -8,7 +8,7 @@
     width: 90%; /* Make it responsive */
     max-width: 1200px;
     overflow-x: auto; /* Handle overflow on small screens */
-    font-family: 'Martian Mono', monospace;
+    font-family: 'poppins';
 }
 
 .responsive-table {

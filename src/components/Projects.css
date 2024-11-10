@@ -1,4 +1,6 @@
 /* Projects.css */
+
+/* Projects Section - Grid Layout */
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
@@ -8,39 +10,130 @@
     justify-items: center; /* Center-align images */
 }
 
-/* Style for individual project images */
+/* Project Card Styling */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align title under the image */
+}
+
+/* Project Image Styling */
 .project-image {
-    width: 100%; 
+    width: 450px;
     height: 450px;
     object-fit: cover;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Centered "See all Projects" text */
-.see-all-projects {
-    font-family: 'Martian mono';
-    grid-column: 1 / -1; /* Span across the entire grid */
-    margin-top: 20px; /* Add space above the text */
-    text-align: center; /* Center the text inside the div */
-    width: 100%; /* Ensure the div takes full width */
+/* Project Title Styling */
+.project-title {
+    margin-top: 10px; /* Space between image and title */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: #333; /* Change text color */
+    text-align: center; /* Center text */
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font is applied */
 }
 
-.see-all-projects a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    transition: color 0.3s ease;
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    font-family: 'Poppins';
 }
 
-.see-all-projects a:hover {
-    color: #009fd4; /* Darker blue on hover */
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    max-width: 800px;
+    max-height: 80vh; /* Limit max height of modal */
+    width: 90%;
+    border-radius: 10px;
+    z-index: 1001;
+    overflow-y: auto; /* Allow vertical scrolling for the modal */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Related Images Styling */
+.related-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    max-height: 60vh; /* Limit height for related images */
+    overflow-y: auto; /* Allow scrolling if too many images */
+}
+
+.related-image {
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Fullscreen Modal Styles */
+.fullscreen-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000; /* Ensure this is above everything else */
+    display: flex; /* Use flex to center content */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+}
+
+.fullscreen-image {
+    max-width: 90%; /* Limits the image size */
+    max-height: 90%; /* Limits the image size */
+    cursor: pointer; /* Change cursor to pointer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional styling */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects {
         grid-template-columns: 1fr; /* 1 column on smaller screens */
+    }
+
+    .project-image {
+        width: 100%; /* Use full width for images on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .related-image {
+        max-width: 100%; /* Full width for images on smaller screens */
+        height: auto; /* Maintain aspect ratio */
     }
 }

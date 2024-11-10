@@ -61,7 +61,7 @@ const Hero = () => {
                     paddingTop: '100px',
                 }}
             >
-                <h3 style={{ fontFamily: 'Martian mono', fontSize: '2rem', marginBottom: '20px' }}>
+                <h3 style={{ fontFamily: 'poppins', fontSize: '2rem', marginBottom: '20px' }}>
                     We are MIVIZ
                 </h3>
                 <p
@@ -72,7 +72,7 @@ const Hero = () => {
                         fontSize: '1.0rem',
                         lineHeight: '1.6',
                         padding: '20px',
-                        fontFamily: 'Martian mono',
+                        fontFamily: 'poppins',
                     }}
                 >
                     Welcome to MIVIZ Architects, a prestigious architectural firm based in Pune, India. We specialize in crafting highly personalized homes where minimalism meets functionality.
