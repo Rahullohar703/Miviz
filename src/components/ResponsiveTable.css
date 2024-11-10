@@ -24,7 +24,7 @@
 
 /* Table Header Style */
 .responsive-table thead th {
-    background-color: #000000;
+    background-color: #000;
     color: #fff;
     padding: 15px;
     font-weight: 500;
@@ -41,26 +41,21 @@
 
 /* Remove border from the last row */
 .responsive-table tbody tr:last-child td {
-    border-bottom: none;
+    border-bottom: none; /* Remove border from the last row */
 }
 
-/* Tablet Breakpoint */
+/* General Tablet and Phone styles */
 @media (max-width: 768px) {
-    .responsive-table thead th,
-    .responsive-table tbody td {
-        font-size: 0.9rem;
-        padding: 12px;
-    }
-
-    .table-container {
-        width: 95%; /* Slightly increase width on tablets */
+    .responsive-table {
+        display: none; /* Default to hide the table */
     }
 }
 
-/* Mobile Breakpoint */
+/* Mobile Breakpoint for smaller screens */
 @media (max-width: 480px) {
+    // Default table for smartphones under 480px width
     .responsive-table {
-        display: block; /* Block context for flex-use */
+        display: block; /* Block display context for easier manipulation */
     }
 
     .responsive-table thead {
@@ -90,5 +85,29 @@
         font-weight: 700;
         margin-right: 10px;
         color: #555;
+    }
+}
+
+/* Special Styles for devices between 480px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .responsive-table {
+        display: block; /* Similar block context */
+    }
+
+    .responsive-table thead {
+        display: table-header-group; /* Mimic natural table layout */
+    }
+
+    .responsive-table tbody tr {
+        display: block; /* Each row becomes a block */
+        margin: 10px 0; /* Space out each block */
+    }
+
+    .responsive-table tbody td {
+        display: block; /* Blocks display for better readability */
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 5px; /* Space between each cell */
     }
 }
