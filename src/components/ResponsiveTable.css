@@ -1,3 +1,5 @@
+/* ResponsiveTable.css */
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +9,7 @@
     width: 90%; /* Make it responsive */
     max-width: 1200px;
     overflow-x: auto; /* Handle overflow on small screens */
-    font-family: 'Poppins', sans-serif; /* Corrected the font-family to ensure it's a sans-serif font */
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font is applied */
 }
 
 .responsive-table {
@@ -20,6 +22,7 @@
     overflow: hidden; /* Keep the border-radius intact */
 }
 
+/* Table Header Style */
 .responsive-table thead th {
     background-color: #000000;
     color: #fff;
@@ -28,6 +31,7 @@
     font-size: 1rem;
 }
 
+/* Table Body Style */
 .responsive-table tbody td {
     padding: 15px;
     border-bottom: 1px solid #e0e0e0;
@@ -35,11 +39,12 @@
     color: #333;
 }
 
+/* Remove border from the last row */
 .responsive-table tbody tr:last-child td {
-    border-bottom: none; /* Remove border from the last row */
+    border-bottom: none;
 }
 
-/* Tablet breakpoint */
+/* Tablet Breakpoint */
 @media (max-width: 768px) {
     .responsive-table thead th,
     .responsive-table tbody td {
@@ -52,12 +57,10 @@
     }
 }
 
-/* Mobile breakpoint */
+/* Mobile Breakpoint */
 @media (max-width: 480px) {
     .responsive-table {
-        display: block; /* Change to block for proper mobile behavior */
-        overflow-x: auto; /* Allow horizontal scrolling */
-        white-space: nowrap; /* Prevent content from wrapping */
+        display: block; /* Block context for flex-use */
     }
 
     .responsive-table thead {
@@ -71,6 +74,7 @@
         border: 1px solid #e0e0e0;
         border-radius: 8px;
         padding: 10px;
+        background-color: #fafafa; /* Optional: Add a background color to each card */
     }
 
     .responsive-table tbody td {
@@ -78,14 +82,13 @@
         justify-content: space-between;
         font-size: 0.85rem;
         padding: 8px 0;
-        border-bottom: none; /* No border for individual cards */
+        width: 100%; /* Make full width for each cell in the flex container */
     }
 
     .responsive-table tbody td::before {
-        content: attr(data-label); /* Use data-label if you want to show the header titles */
+        content: attr(data-label);
         font-weight: 700;
         margin-right: 10px;
         color: #555;
-        flex-basis: 40%; /* Specify how much space the label should take */
     }
 }

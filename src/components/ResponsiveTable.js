@@ -28,9 +28,9 @@ const ResponsiveTable = () => (
                 </tr>
             </thead>
             <tbody>
-                {data.map((item, index) => (
+                {data.map((service, index) => (
                     <tr key={index}>
-                        <td data-label="Service">{item.title}</td>
+                        <td data-label="Our Services">{service.title}</td>
                     </tr>
                 ))}
             </tbody>
