@@ -53,7 +53,7 @@
 
 /* Mobile Breakpoint for smaller screens */
 @media (max-width: 480px) {
-    // Default table for smartphones under 480px width
+    
     .responsive-table {
         display: block; /* Block display context for easier manipulation */
     }
