@@ -1,4 +1,5 @@
 // ResponsiveTable.js
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ResponsiveTable.css';
@@ -24,13 +25,12 @@ const ResponsiveTable = () => (
             <thead>
                 <tr>
                     <th>Our Services</th>
-                    
                 </tr>
             </thead>
             <tbody>
-                {data.map((book, index) => (
+                {data.map((item, index) => (
                     <tr key={index}>
-                        <td>{book.title}</td>
+                        <td data-label="Service">{item.title}</td>
                     </tr>
                 ))}
             </tbody>

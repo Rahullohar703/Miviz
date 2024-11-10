@@ -1,4 +1,3 @@
-/* ResponsiveTable.css */
 * {
     box-sizing: border-box;
 }
@@ -8,7 +7,7 @@
     width: 90%; /* Make it responsive */
     max-width: 1200px;
     overflow-x: auto; /* Handle overflow on small screens */
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif; /* Corrected the font-family to ensure it's a sans-serif font */
 }
 
 .responsive-table {
@@ -55,6 +54,12 @@
 
 /* Mobile breakpoint */
 @media (max-width: 480px) {
+    .responsive-table {
+        display: block; /* Change to block for proper mobile behavior */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        white-space: nowrap; /* Prevent content from wrapping */
+    }
+
     .responsive-table thead {
         display: none; /* Hide the header on small screens */
     }
@@ -73,12 +78,14 @@
         justify-content: space-between;
         font-size: 0.85rem;
         padding: 8px 0;
+        border-bottom: none; /* No border for individual cards */
     }
 
     .responsive-table tbody td::before {
-        content: attr(data-label);
+        content: attr(data-label); /* Use data-label if you want to show the header titles */
         font-weight: 700;
         margin-right: 10px;
         color: #555;
+        flex-basis: 40%; /* Specify how much space the label should take */
     }
 }
