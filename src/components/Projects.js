@@ -46,6 +46,22 @@ const Projects = () => {
       title: 'Vishwacon',
       relatedImages: ['/Vishwacon 02.jpg'],
     },
+    {
+      id: 6,
+      img: '/Airlie beach 01.jpg',
+      title: 'Airlie Beach',
+      relatedImages:
+       ['/Airlie beach 02.jpg',
+        '/Airlie beach 03.jpg',
+        '/Airlie beach 04.jpg',
+        '/Airlie beach 04.1.jpg',
+        '/Airlie beach 05.jpg',
+        '/Airlie beach 06.jpg',
+        '/Airlie beach 07.jpg',
+        '/Airlie beach 08.jpg',
+        '/Airlie beach 09.jpg'
+      ],
+    },
   ];
 
   const openModal = (project) => {
