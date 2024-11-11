@@ -3,7 +3,7 @@
 .navbar {
     position: fixed;
     top: 20px; /* Distance from the top */
-    left: 50%; /* Center horizontally */
+    left: 15%; /* Center horizontally */
     transform: translateX(-50%); /* Horizontal centering fix */
     background-color: #ffffff;
     padding: 15px 30px;
