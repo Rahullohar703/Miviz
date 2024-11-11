@@ -46,9 +46,7 @@ const ModernNavbar = () => {
                 <motion.li whileHover={{ scale: 1.1 }}>
                     <Link to="/contact">Contact</Link>
                 </motion.li>
-                <motion.li whileHover={{ scale: 1.1 }}>
-                    <Link to="/about">About Us</Link>
-                </motion.li>
+                
             </ul>
         </motion.nav>
     );

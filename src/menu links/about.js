@@ -7,13 +7,13 @@ import './about.css';
 const about = () => {
     const persons = [
         {
-            name: 'John Doe',
-            photo: 'path_to_john_photo.jpg', // Replace with actual image path
+            name: 'Ar. Manohar Lohar',
+            photo: 'manoharprofile.png', // Replace with actual image path
             info: 'John is a software engineer with over 10 years of experience in full-stack development. He enjoys creating dynamic and beautiful web applications.'
         },
         {
-            name: 'Jane Smith',
-            photo: 'path_to_jane_photo.jpg', // Replace with actual image path
+            name: 'Ar. Netra Sali',
+            photo: 'netraprofile.png', // Replace with actual image path
             info: 'Jane is a UX designer focused on creating user-friendly interfaces. She has a passion for making the web more accessible for everyone.'
         }
     ];
