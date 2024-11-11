@@ -1,0 +1,65 @@
+/* About.css */
+
+.about-container {
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column; /* Stack cards on mobile */
+    align-items: stretch; /* Stretch cards to full width */
+    gap: 40px; /* Spacing between cards */
+    padding: 20px; /* Container padding */
+}
+
+.about-card {
+    display: flex; /* Lay out in a row */
+    background-color: #f9f9f9; /* Background color for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Hide overflow */
+    width: 100%; /* Full width */
+    max-width: none; /* Remove max width */
+}
+
+/* Ensure images take half of the card width or more */
+.person-photo {
+    width: 50%; /* Take half of the card width */
+    object-fit: cover; /* Ensure the image fits nicely */
+}
+
+/* Info section styles */
+.person-info {
+    width: 50%; /* Take the remaining half */
+    padding: 20px; /* Padding for the info section */
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+    justify-content: center; /* Center vertically */
+}
+
+/* Heading styles */
+.person-info h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Heading size */
+    color: #333; /* Text color */
+}
+
+/* Paragraph styles */
+.person-info p {
+    font-size: 1rem; /* Text size */
+    color: #666; /* Additional info color */
+    margin: 10px 0 0; /* Margin above the paragraph */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column; /* Stack for mobile */
+    }
+
+    .person-photo {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .person-info {
+        width: 100%; /* Full width on mobile */
+    }
+}

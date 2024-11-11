@@ -10,6 +10,7 @@ import Ticker from './components/Ticker';
 import ResponsiveTable from './components/ResponsiveTable';
 import Footer from './components/Footer';
 import Careers from './menu links/Careers';
+import About from './menu links/about';
 
 function App() {
     return (
@@ -35,6 +36,7 @@ function App() {
                 <Route path="/careers" element={<Careers />} />
                 <Route path="/interior" element={<Interior />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
                 
                 {/* Optional: Wildcard Route for 404 */}
                 <Route path="*" element={<h1>404 - Page Not Found</h1>} />
