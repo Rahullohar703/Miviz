@@ -11,45 +11,9 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 3,
-      img: 'Andhra pradesh 02.png',
-      title: 'Andhra Pradesh',
-      relatedImages: ['/Andhra pradesh 01.jpg'],
-    },
-    {
-      id: 4,
-      img: '/Shirur 02.jpg',
-      title: 'Shirur',
-      relatedImages: ['shirur 01.jpg', 'Shirur 03.jpg','Shirur 04.jpg','Shirur 05.jpg'],
-    },
-    {
-      id: 2,
-      img: '/Jambhulwadi 01.png',
-      title: 'Jambhulwadi',
-      relatedImages: [
-        '/Jambhulwadi 02.png',
-        '/Jambhulwadi 03.png',
-        '/Jambhulwadi 04.png',
-        '/Jambhulwadi 05.png',
-        '/Jambhulwadi 06.png',
-      ],
-    },
-    {
-      id: 1,
-      img: '/Satara 01.jpg',
-      title: 'Satara',
-      relatedImages: ['/Satara 02.jpg'],
-    },
-    {
-      id: 5,
-      img: '/Vishwacon 01.jpg',
-      title: 'Vishwacon',
-      relatedImages: ['/Vishwacon 02.jpg'],
-    },
-    {
       id: 6,
       img: '/Airlie beach 01.jpg',
-      title: 'Airlie Beach',
+      title: 'Airlie Beach, Australia',
       relatedImages:
        ['/Airlie beach 02.jpg',
         '/Airlie beach 03.jpg',
@@ -61,6 +25,54 @@ const Projects = () => {
         '/Airlie beach 08.jpg',
         '/Airlie beach 09.jpg'
       ],
+    },
+    {
+      id: 4,
+      img: '/Shirur 02.jpg',
+      title: 'Anandabhavan, Shirur',
+      relatedImages: ['shirur 01.jpg', 'Shirur 03.jpg','Shirur 04.jpg','Shirur 05.jpg'],
+    },
+    {
+      id: 8,
+      img: '/Malda 01.jpg',
+      title: 'Twin House, Malda',
+      relatedImages: ['/Malda 02.jpg','/Malda 03.jpg','/Malda 04.jpg'],
+    },
+    {
+      id: 7,
+      img: '/saswad 01.jpg',
+      title: 'Avantika Villa, Saswad',
+      relatedImages: ['saswad 02.jpg','saswad 03.jpg','saswad 04.jpg','saswad 05.jpg'],
+    },
+    {
+      id: 5,
+      img: '/Vishwacon 01.jpg',
+      title: 'Vishwacon Society, Satara',
+      relatedImages: ['/Vishwacon 02.jpg'],
+    },
+    {
+      id: 1,
+      img: '/Satara 01.jpg',
+      title: 'Shinde Nivas, Satara',
+      relatedImages: ['/Satara 02.jpg'],
+    },
+    {
+      id: 2,
+      img: '/Jambhulwadi 01.png',
+      title: 'Jambhale House, Jambhulwadi',
+      relatedImages: [
+        '/Jambhulwadi 02.png',
+        '/Jambhulwadi 03.png',
+        '/Jambhulwadi 04.png',
+        '/Jambhulwadi 05.png',
+        '/Jambhulwadi 06.png',
+      ],
+    },
+    {
+      id: 3,
+      img: 'Andhra pradesh 02.png',
+      title: 'Box House, Andhra Pradesh',
+      relatedImages: ['/Andhra pradesh 01.jpg'],
     },
   ];
 

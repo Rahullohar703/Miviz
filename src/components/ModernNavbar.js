@@ -43,15 +43,7 @@ const ModernNavbar = () => {
                 <motion.li whileHover={{ scale: 1.1 }}>
                     <Link to="/careers">Careers</Link>
                 </motion.li>
-                <motion.li whileHover={{ scale: 1.1 }}>
-                    <a
-                        href="https://mivizarchitects.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Interior
-                    </a>
-                </motion.li>
+                
                 <motion.li whileHover={{ scale: 1.1 }}>
                     <Link to="/contact">Contact</Link>
                 </motion.li>

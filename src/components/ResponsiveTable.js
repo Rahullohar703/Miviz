@@ -1,17 +1,15 @@
-// ResponsiveTable.js
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ResponsiveTable.css';
 
-const data = [
-    { title: 'Residential Design' },
-    { title: 'Commercial Architecture' },
-    { title: 'Interior Design' },
-    { title: 'Landscape Architecture' },
-    { title: 'Renovation and Restoration' },
-    { title: '3D Visuals' },
-    { title: 'Urban Planning and Design' },
+const servicesData = [
+    'Residential Design',
+    'Commercial Architecture',
+    'Interior Design',
+    'Landscape Architecture',
+    'Renovation and Restoration',
+    '3D Visuals',
+    'Urban Planning and Design',
 ];
 
 const ResponsiveTable = () => (
@@ -28,10 +26,16 @@ const ResponsiveTable = () => (
                 </tr>
             </thead>
             <tbody>
-                {data.map((service, index) => (
-                    <tr key={index}>
-                        <td data-label="Our Services">{service.title}</td>
-                    </tr>
+                {servicesData.map((service, index) => (
+                    <motion.tr
+                        key={index}
+                        className="table-row"
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.1, duration: 0.6 }}
+                    >
+                        <td data-label={service}>{service}</td>
+                    </motion.tr>
                 ))}
             </tbody>
         </table>
