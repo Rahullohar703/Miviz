@@ -30,7 +30,7 @@ const Projects = () => {
       id: 4,
       img: '/Shirur 02.jpg',
       title: 'Anandabhavan, Shirur',
-      relatedImages: ['shirur 01.jpg', 'Shirur 03.jpg','Shirur 04.jpg','Shirur 05.jpg'],
+      relatedImages: ['Shirur 03.jpg','Shirur 04.jpg','Shirur 05.jpg'],
     },
     {
       id: 8,
