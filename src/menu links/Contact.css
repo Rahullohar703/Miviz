@@ -1,4 +1,12 @@
 /* Contact.css */
+.form-wrapper iframe {
+  width: 100%;
+  max-width: 640px; /* Optional: Limit max width */
+  height: 100%;
+  min-height: 800px; /* Adjust to fit your form */
+}
+
+
 .contact-container {
     max-width: 900px;
     margin: 0 auto;
