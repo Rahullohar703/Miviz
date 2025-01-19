@@ -19,20 +19,19 @@ const Contact = () => {
         Contact Us
       </motion.h1>
 
-      {/* Embed the Google Form using an iframe */}
+      {/* Embed the Calendly booking page using an iframe */}
       <div className="form-wrapper">
-      <iframe
-  src="https://docs.google.com/forms/d/e/1FAIpQLSdGNxu58HTL71RQ5t-YnKQJXaMkwW3Hem0KeSk7zxP9epso1A/viewform?embedded=true"
-  width="100%"
-  height="800"
-  frameBorder="0"
-  marginHeight="0"
-  marginWidth="0"
-  title="Google Form"
->
-  Loading…
-</iframe>
-
+        <iframe
+          src="https://calendly.com/mivizarchitects/30min" // Replace with your actual Calendly link
+          width="100%"
+          height="800"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          title="Calendly Booking"
+        >
+          Loading…
+        </iframe>
       </div>
     </motion.div>
   );
