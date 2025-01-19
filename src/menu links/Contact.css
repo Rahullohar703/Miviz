@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Align items from the top */
   min-height: 100vh; /* Ensure the container takes full height */
   box-sizing: border-box;
 }
@@ -11,26 +11,42 @@
 .contact-container h1 {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space between heading and form */
+  z-index: 1; /* Ensure heading is above any overlapping elements */
+  color: #333; /* Optional: Adjust text color */
+  margin-top: 150px;
 }
 
 .form-wrapper {
   width: 100%;
-  max-width: 900px; /* Increase max-width for wider screens */
+  max-width: 900px; /* Limit width on larger screens */
   height: 90vh; /* Dynamically adjust height based on screen size */
   position: relative;
-  margin: 0 auto; /* Center the form-wrapper horizontally */
+  margin: 0 auto; /* Center horizontally */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better appearance */
   border-radius: 8px; /* Optional rounded corners */
-  overflow: hidden; /* Ensure content stays within bounds */
-  margin-top: 35px;
+  overflow: hidden; /* Ensure iframe fits within bounds */
+  z-index: 0; /* Ensure iframe stays behind the heading */
 }
 
 .form-wrapper iframe {
   width: 100%;
-  height: 100%; /* Ensure iframe takes the full height of the wrapper */
+  height: 100%; /* Ensure iframe fills the wrapper */
   border: 0;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-container h1 {
+    font-size: 1.5rem; /* Reduce heading size */
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .form-wrapper {
+    max-width: 100%; /* Use full width for smaller screens */
+    height: 70vh; /* Adjust height for smaller screens */
+  }
 }
