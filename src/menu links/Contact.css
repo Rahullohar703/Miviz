@@ -6,47 +6,52 @@
   justify-content: flex-start; /* Align items from the top */
   min-height: 100vh; /* Ensure the container takes full height */
   box-sizing: border-box;
+  background-color: #f8f9fa; /* Light background for contrast */
 }
 
 .contact-container h1 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px; /* Space between heading and form */
-  z-index: 1; /* Ensure heading is above any overlapping elements */
-  color: #333; /* Optional: Adjust text color */
-  margin-top: 150px;
+  color: #333; /* Adjust text color */
+  margin-top: 100px; /* Adjusted margin for better spacing */
+  font-weight: bold;
 }
 
+/* Form Wrapper */
 .form-wrapper {
   width: 100%;
-  max-width: 900px; /* Limit width on larger screens */
-  height: 90vh; /* Dynamically adjust height based on screen size */
-  position: relative;
+  max-width: 800px; /* Limit width for better readability */
+  height: 85vh; /* Adjust height dynamically */
   margin: 0 auto; /* Center horizontally */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better appearance */
-  border-radius: 8px; /* Optional rounded corners */
-  overflow: hidden; /* Ensure iframe fits within bounds */
-  z-index: 0; /* Ensure iframe stays behind the heading */
+  background: white;
+  padding: 10px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow effect */
+  overflow: hidden; /* Prevent content overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Embedded Google Form */
 .form-wrapper iframe {
   width: 100%;
-  height: 100%; /* Ensure iframe fills the wrapper */
-  border: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100%; /* Ensure it fills the wrapper */
+  border: none; /* Remove default iframe border */
+  border-radius: 8px; /* Match the wrapper’s border radius */
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
   .contact-container h1 {
-    font-size: 1.5rem; /* Reduce heading size */
-    margin-bottom: 15px; /* Adjust spacing */
+    font-size: 1.8rem; /* Slightly smaller heading */
+    margin-bottom: 15px;
   }
 
   .form-wrapper {
-    max-width: 100%; /* Use full width for smaller screens */
-    height: 70vh; /* Adjust height for smaller screens */
+    max-width: 100%;
+    height: 75vh; /* Adjust height for mobile */
+    padding: 5px;
   }
 }

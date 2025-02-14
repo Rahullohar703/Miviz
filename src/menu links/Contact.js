@@ -1,7 +1,7 @@
 // src/menu links/Contact.js
-import React from 'react';
-import { motion } from 'framer-motion';
-import './Contact.css'; // Import optional CSS for styling
+import React from "react";
+import { motion } from "framer-motion";
+import "./Contact.css"; // Import optional CSS for styling
 
 const Contact = () => {
   return (
@@ -19,16 +19,16 @@ const Contact = () => {
         Contact Us
       </motion.h1>
 
-      {/* Embed the Calendly booking page using an iframe */}
+      {/* Embed Google Form using an iframe */}
       <div className="form-wrapper">
         <iframe
-          src="https://calendly.com/mivizarchitects/30min" // Replace with your actual Calendly link
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdGNxu58HTL71RQ5t-YnKQJXaMkwW3Hem0KeSk7zxP9epso1A/viewform?embedded=true"
           width="100%"
           height="800"
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"
-          title="Calendly Booking"
+          title="Google Form"
         >
           Loading…
         </iframe>
