@@ -16,6 +16,7 @@
   color: #333; /* Adjust text color */
   margin-top: 100px; /* Adjusted margin for better spacing */
   font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Consistent font */
 }
 
 /* Form Wrapper */
