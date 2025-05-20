@@ -22,8 +22,8 @@ const Contact = () => {
       {/* Embed Google Form using an iframe */}
       <div className="form-wrapper">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdGNxu58HTL71RQ5t-YnKQJXaMkwW3Hem0KeSk7zxP9epso1A/viewform?embedded=true"
-          width="100%"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe0RxY7CEWqB7U7Za4eAlHfdTnoeToti_GF9-bVgyynkClbjA/viewform?embedded=true"
+          width="100%" 
           height="800"
           frameBorder="0"
           marginHeight="0"

@@ -1,4 +1,3 @@
-// src/menu links/Colab.js
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Careers.css'; // Import CSS for styling
@@ -22,14 +21,8 @@ const Careers = () => {
         <p>Join hands with MIVIZ Architects to create innovative, sustainable designs.</p>
       </motion.div>
 
-      {/* careersoration Cards Section */}
+      {/* Collaboration Cards Section */}
       <div className="careers-cards">
-      <a 
-          href="https://forms.gle/WBUL9YaU62Uu9Q788"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card-link" /* Add class to customize link styles */
-        >
         <motion.div
           className="careers-card"
           whileHover={{ scale: 1.05 }}
@@ -37,13 +30,8 @@ const Careers = () => {
         >
           <h3>Collaborate on Projects</h3>
           <p>Work closely with our expert team to develop modern and sustainable designs.</p>
-        </motion.div></a>
-        <a 
-          href="https://forms.gle/u8rkQ5cbVZmEiZof9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card-link" /* Add class to customize link styles */
-        >
+        </motion.div>
+
         <motion.div
           className="careers-card"
           whileHover={{ scale: 1.05 }}
@@ -51,7 +39,7 @@ const Careers = () => {
         >
           <h3>Join Our Team</h3>
           <p>Looking for talented architects and designers to join our innovative team.</p>
-        </motion.div></a>
+        </motion.div>
       </div>
 
       {/* Call to Action Section */}
@@ -65,7 +53,6 @@ const Careers = () => {
         <p>
           Ready to Collaborate with us? Get in touch today and let's turn your vision into reality.
         </p>
-        
       </motion.div>
     </motion.div>
   );
