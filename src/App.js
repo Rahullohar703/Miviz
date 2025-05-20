@@ -10,6 +10,7 @@ import Ticker from './components/Ticker';
 import ResponsiveTable from './components/ResponsiveTable';
 import Footer from './components/Footer';
 import Careers from './menu links/Careers';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
     return (
