@@ -22,7 +22,7 @@ const Contact = () => {
       {/* Embed Google Form using an iframe */}
       <div className="form-wrapper">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSe0RxY7CEWqB7U7Za4eAlHfdTnoeToti_GF9-bVgyynkClbjA/viewform?embedded=true"
+          src=""
           width="100%" 
           height="800"
           frameBorder="0"
